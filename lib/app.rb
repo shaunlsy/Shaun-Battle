@@ -19,5 +19,5 @@ get '/secret3' do
 end
 
 get '/cat' do
-  erb :cat
+  erb(:cat)
 end
