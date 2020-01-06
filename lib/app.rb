@@ -10,14 +10,6 @@ get '/secret' do
   "it's a secret!"
 end
 
-get '/secret2' do
-  "it's a secret2!"
-end
-
-get '/secret3' do
-  "it's a secret3!"
-end
-
 get '/random-cat' do
   @name = ["Amigo", "Oscar", "Viking"][rand(3)]
   erb(:cat)
@@ -28,6 +20,6 @@ post '/named-cat' do
   erb(:cat)
 end
 
-get '/form' do
+get '/cat-form' do
   erb(:form)
 end
