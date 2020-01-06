@@ -3,4 +3,11 @@ h1 {font-size:32px; color:blue; text-align:left;}
 </style>
 
 <img src="http://bit.ly/1eze8aE" style='border: 3px dashed red'>
-<h1>My name is <%= @name %><h1>
+<% if @name %>
+<h1>My name is <%= @name %></h1>
+<% end %>
+
+<form name="input" action="/named-cat">
+  Name: <input type=“text” name=name>
+  <input type="submit" value="Submit">
+</form>
