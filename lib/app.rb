@@ -19,5 +19,6 @@ get '/secret3' do
 end
 
 get '/cat' do
+  @name = ["Amigo", "Oscar", "Viking"][rand(3)]
   erb(:cat)
 end
