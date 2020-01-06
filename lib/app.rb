@@ -18,7 +18,13 @@ get '/secret3' do
   "it's a secret3!"
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ["Amigo", "Oscar", "Viking"][rand(3)]
+  erb(:cat)
+end
+
+get '/named-cat' do
+  p params
+  @name = params[:name]
   erb(:cat)
 end
