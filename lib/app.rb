@@ -3,7 +3,7 @@ require 'shotgun'
 configure(:development) { set :session_secret, "something" }
 
 get '/' do
-  "Hello World"
+  "Hello World!"
 end
 
 get '/secret' do
